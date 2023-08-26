@@ -1,0 +1,3 @@
+-   Create Next App with Tailwind css
+-   Explore the file & folder structure
+-   
