@@ -1,2 +1,39 @@
 -   Create Next App with Tailwind css
--   
+-   install some other dependancies
+    bcrypt (Hash password), mongodb, mongoose, next-auth
+-   Create some file structure (app, components, models[MongoDB mongoose db models], public, styles, utils[for unility functions], .env)
+-   Copy the Git gist files
+-   Import assets. 
+-   Create page.jsx & layout.jsx
+-   Create some components (Navbar, Feed, Form, Profile, PromptCard,  Provider)
+-   Develop Navbar with next-auth
+-   Create the folders into app
+    app > api > auth > [...nextauth] > route.js
+    Add basic auth code
+
+-   Go to console.cloud.google.com
+    Create a new project 
+    go to menu > APIs & Services > OAuth consent screen
+    click "create" to create API
+    In Credentials part, "Create Credentials" > "OAuth client ID"
+    Select application type, Add "Authorized JavaScript origins" & "Authorized redirect URIs" as http://localhost:3000, ther "Create"
+    Copy and paste "Client ID" and "Client Secret" to .env
+
+    Next.js routes something known as a severless routes, Which mean this is the Lambda function that's opens up only get calls.
+    We don't have to keep our server running constantly, But we do have to actually make a connection with the database
+
+-   Create database.js file in "utils".
+    make the database connection
+-   Create the database in MongoDB Atlas and Connect DB (3.20.00)
+-   call connectToDB function to route.js
+-   Create a model for user
+-   Call the model and write the function into route.js
+-   Added NEXTAUTH_URL, NEXTAUTH_URL_INTERNAL, NEXTAUTH_SECRET into .env
+-   Fix some errors and Run and Test the auth (update Authorized redirect URIs on Google console - http://localhost:3000/api/auth/callback/google)
+
+-   Create the file for "Create Prompt"
+-   Create the form element
+-   Create an API endpoint for the form
+-   Create api > prompt > new > route.js
+-   Create prompt.js file into models
+-   Use the model in route.js
