@@ -32,12 +32,14 @@ const Feed = () => {
       const response = await fetch('/api/prompt');
       const data = await response.json();
 
+      console.log("DATA", data);
       setPosts(data);
     }
-
+    
     fetchPosts();
   }, [])
   
+  console.log("POSTS", posts);
 
   return (
     <section className='feed'>
