@@ -44,3 +44,6 @@
 
 -   Create app > profile > page.jsx
 -   Create api > users > [id] > posts > route.js
+-   Create api > prompt > [id] > route.js
+-   Calling the API endpoint for EDIT and DELETE
+-   Create app > update-prompt > page.jsx
