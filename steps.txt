@@ -41,3 +41,6 @@
 -   Develop the "Feed" file
 -   Create the API endpoint for the feed
 -   Create api > prompt > route.js (FETCH data)
+
+-   Create app > profile > page.jsx
+-   Create api > users > [id] > posts > route.js
